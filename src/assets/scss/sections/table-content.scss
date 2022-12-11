@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+th,
+td {
+    padding: 0.5rem;
+}
+tr {
+    cursor: pointer;
+}
+th {
+    cursor: default;
+    color: #fff;
+    background: #6c7ae0;
+    button {
+        cursor: pointer;
+    }
+}
+tbody {
+    background: #fff;
+}
+th span {
+    margin-right: 1rem;
+}
+
+.select-row {
+    text-align: right;
+}
+
+#clear-btn {
+    float: right;
+    margin-top: 1rem;
+}

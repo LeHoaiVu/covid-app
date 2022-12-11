@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1200px) {
+    th,
+    td {
+        padding: 0.25rem;
+    }
+    th span {
+        margin-right: 0.25rem;
+    }
+    th button {
+        display: block;
+        margin: 0 auto;
+    }
+    .select-row {
+        #row {
+            padding-left: 0.25rem;
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pagination-info,
+    .select-row {
+        padding-right: 0.25rem;
+    }
+}
