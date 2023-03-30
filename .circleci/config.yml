@@ -19,7 +19,7 @@ jobs:
           command: "echo Hello, World!"
 
   hello-vuCai:
-      docker:
+    docker:
       - image: cimg/base:stable
     steps:
       - checkout
