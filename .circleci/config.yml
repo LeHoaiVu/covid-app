@@ -17,10 +17,18 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-
+  hello-vuCai:
+      docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run:
+          name: "hello vu cai"
+          command: "echo Hello, vu cai!"
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+      - hello-vuCai
