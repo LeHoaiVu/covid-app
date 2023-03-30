@@ -33,3 +33,7 @@ workflows:
     jobs:
       - say-hello
       - hello-vuCai
+      - deploy:
+        requires:
+          - say-hello
+          - hello-vuCai
