@@ -8,7 +8,7 @@ jobs:
       - run:
           name: "vu"
           command: |
-            echo ${MY_ENV_VAR}
+            echo ${CIRCLE_BRANCH}
 workflows:
   test-env-vars:
     jobs:
