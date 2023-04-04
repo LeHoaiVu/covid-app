@@ -1,16 +1,15 @@
 version: 2.1
 
-commands:
-  print_pipeline_id:
-    steps:
-      - run: echo ${CIRCLE_BRANCH}
-
 jobs:
   vu_job:
     docker:
       - image: circleci/node:13.8.0
     steps:
-      - print_pipeline_id
+      - run: exit 1
+      - run: 
+          name: on error
+          command: echo 'loiiiiii'
+          when: on_fail
 
 workflows:
   vu_workflow:
