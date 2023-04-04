@@ -6,13 +6,13 @@ commands:
       - run: echo ${CIRCLE_BRANCH}
 
 jobs:
-  my_job:
+  vu_job:
     docker:
       - image: circleci/node:13.8.0
     steps:
       - print_pipeline_id
 
 workflows:
-  my_workflow:
+  vu_workflow:
     jobs:
-      - my_job
+      - vu_job
